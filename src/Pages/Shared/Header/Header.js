@@ -7,8 +7,8 @@ const Header = () => {
     <div>
       <>
         <Navbar
-          bg="dark"
-          variant="dark"
+          bg="light"
+          variant="light"
           sticky="top"
           collapseOnSelect
           expand="lg"
@@ -20,7 +20,7 @@ const Header = () => {
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
-                alt="React Bootstrap logo"
+                alt=""
               />
             </Navbar.Brand>
             <Navbar.Toggle />
