@@ -1,0 +1,55 @@
+[
+    {
+        "id":"1",
+        "name":"Sergel 20 (10 pcs)",
+        "price":"৳ 66.80",
+        "image":"https://i.ibb.co/sFFHDNs/Sergel-Capsule-20mg.jpg",
+        "producer": "Healthcare Pharmaceuticals Ltd.",
+        "desc" : "Esomeprazole is used to treat chronic heartburn and other symptoms associated with GERD."
+
+    },
+    {
+        "id":"2",
+        "name":"Azyth 500 (3 pcs)",
+        "price":"৳ 158.18",
+        "image":"https://i.ibb.co/n67x6jb/azyth500.jpg",
+        "producer": "Sandoz Bangladesh Limited.",
+        "desc" : "Azithromycin is indicated for infections (caused by susceptible organisms) in lower respiratory tract infections including bronchitis and pneumonia"
+    },
+    {
+        "id":"3",
+        "name":"Moxaclav 625 (6 Pcs)",
+        "price":"৳ 182.40",
+        "image":"https://i.ibb.co/zVFhnL6/Moxaclav-625-Tablet-l.jpg",
+        "producer": "Square Pharmaceuticals Limited",
+        "desc" : "Upper respiratory tract contaminations (counting ENT) e.g.tonsillitis,sinusitis,otitis media. Lower respiratory tract contaminations e.g.acute and constant bronchitis, lobar and bronchopneumonia. "
+    },
+    {
+        "id":"4",
+        "name":"Clacido 625 (6 Pcs)",
+        "price":"৳ 182.40",
+        "image":"https://i.ibb.co/jVX1bpq/Clacido-Tablet-625-mg.jpg",
+        "producer": "Healthcare Pharmaceuticals Limited",
+        "desc" : "Co-amoxiclav is used to treat bacterial infections in the following places for a short period of time. Tonsillitis, sinusitis, and otitis media are examples of upper respiratory tract infections (including ENT)."
+
+    },
+    {
+        "id":"5",
+        "name":"Surgical Face Masks Disposable 50 Pcs",
+        "price":"৳ 129.00",
+        "image":"https://i.ibb.co/PjcKcbt/41fnn0b6-ML.jpg",
+        "producer": "Covid-19 Special",
+        "desc" : "Face Mask, Disposable, 3Ply, with Elastic ear loop, with filter. Designed for higher risk fluid environments. Provides excellent bacterial and particle filtration. "
+
+    },
+    {
+        "id":"6",
+        "name":"Glaxose D (Glucose Powder) 400 gm",
+        "price":"৳ 145.00",
+        "image":"https://i.ibb.co/mzQGgwF/Glaxose-D-Glucose-Powder-400-gm.jpg",
+        "producer": "Personal Care",
+        "desc" : "Glaxose-D Glucose Powder helps to provide instant energy. · It contains Calcium for bone health. · It contains Vitamin C also"
+
+    }
+]
+

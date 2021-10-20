@@ -1,8 +1,11 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useFirebase from "../../../hooks/useFirebase";
 
 const Header = () => {
+  const { user, logOut } = useFirebase();
+  
   return (
     <div>
       <>
@@ -14,33 +17,39 @@ const Header = () => {
           expand="lg"
         >
           <Container>
-            <Navbar.Brand href="#home">
-              <img
-                src="/logo.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-                alt=""
-              />
-            </Navbar.Brand>
+            <Navbar bg="light">
+              <Container>
+                <Navbar.Brand as={Link} to="/home">Renax</Navbar.Brand>
+              </Container>
+            </Navbar>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
-              <Nav.Link as={Link} to="/home#home">
+              <Nav.Link as={Link} to="/home">
                 Home
               </Nav.Link>
-              <Nav.Link as={Link} to="/home#services">
+              <Nav.Link as={Link} to="/services">
                 Services
               </Nav.Link>
-              <Nav.Link as={Link} to="/home#experts">
-                Experts
+              <Nav.Link as={Link} to="/contact">
+                Contact Us
               </Nav.Link>
-
-              <Nav.Link as={Link} to="/login">
-                Login
-              </Nav.Link>
-              <Navbar.Text>
-                Signed in as: <a href="#login">user</a>
-              </Navbar.Text>
+              { user?.email ?
+                <Navbar.Text>
+                <img className="rounded-circle" style={{width: "30px", height: "30px"}} src={user.photoURL} alt="user" />
+              </Navbar.Text> 
+              : <Navbar.Text>
+                {}
+             </Navbar.Text> 
+              }
+              {user?.email ? (
+                <Button onClick={logOut} variant="light">
+                  Logout
+                </Button>
+              ) : (
+                <Nav.Link as={Link} to="/login">
+                  Login
+                </Nav.Link>
+              )}
             </Navbar.Collapse>
           </Container>
         </Navbar>
